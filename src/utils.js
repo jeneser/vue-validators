@@ -1,5 +1,7 @@
 import validator from 'validator'
 
-export const config = {
-
+export const methods = {
+  isEmail: function (str) {
+    return validator.isEmail(str)
+  }
 }

@@ -1,5 +1,7 @@
 # vue-validators
 
+**Developing...**
+
 > A plugin of string validators and sanitizers for Vue.js.
 
 ## Build Setup

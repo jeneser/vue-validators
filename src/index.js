@@ -1,20 +1,22 @@
-import { config } from './utils'
+// import { methods } from './utils.js'
 
 let installed = false
 
-const VueValidators = { config }
+const VueValidators = {}
 
 // Plugin API
 // *********
-VueValidators.install = function install(Vue, opts = {}) {
-  const name = opts.name || 'vue-validators'
-  Vue.component(name, assign(Component, { name }))
+VueValidators.install = function (Vue, opts = {}) {
+  Vue.prototype.$v = {
+    isEmail: function () {
+      console.log('is email')
+    }
+  }
   installed = true
 }.bind(VueValidators)
 
 // Utilities
 // ********
-
 if (typeof exports == "object") {
   module.exports = VueValidators
 } else if (typeof define == "function" && define.amd) {

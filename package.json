@@ -1,6 +1,6 @@
 {
   "name": "vue-validators",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A plugin of string validators and sanitizers for Vue.js",
   "author": "jeneser <jeneserwang@gmail.com>",
   "private": false,

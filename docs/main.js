@@ -4,6 +4,16 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+var VueValidators
+
+if (process.env.NODE_ENV === 'development') {
+  VueValidators = require('../src')
+} else {
+  VueValidators = require('../dist/vue-touch.js')
+}
+
+Vue.use(VueValidators)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
